@@ -1,18 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WalkOn</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <main>
-    <h1>E-Commerce website</h1>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+    <header>
+        <h1>Chapal</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collection">Collections</a></li>
+                <li><a href="#kolhapuris">Kolhapuris</a></li>
+                <li><a href="#jaipuris">Jaipuris</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#aboutUs">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="home" class="hero">
+        <div class="hero2">
+          <h2>Ethnic Kolhapuris</h2>
+          <p>Handcrafted With Passion</p>
+        </div>
+        
+    </section>
+
+    <section id="products">
+        <h2>Products</h2>
+        <div class="filters">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="Sandal">Sandal</option>
+                <option value="Chapal">Chapal</option>
+                <option value="Heels">Heels</option>
+            </select>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="image/product1.png" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="image/product2.png" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$39.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+              <img src="image/product3.png" alt="Product 3">
+              <h3>Product 3</h3>
+              <p>$49.99</p>
+              <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-item">
+            <img src="image/product4.png" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>$19.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions about customizing your chapals, please fill out the form below, and we will get back to you as soon as possible.</p>
+        
+        <form action="/submit_contact_form" method="post">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Your Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="customization-type">What type of customization are you interested in?</label>
+                <select id="customization-type" name="customization-type" required>
+                    <option value="color">Color Customization</option>
+                    <option value="material">Material Customization</option>
+                    <option value="design">Design Customization</option>
+                    <option value="size">Size Customization</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Additional Details or Requests</label>
+                <textarea id="message" name="message" placeholder="Describe your custom chapal design or request"></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+    </section>
+
+    <div class="live-chat">
+        <button onclick="alert('Live chat is currently not available.')">Chat with us</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Aishwarya's Store</p>
+    </footer>
+</body>
 </html>
