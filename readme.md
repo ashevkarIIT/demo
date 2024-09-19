@@ -1,7 +1,6 @@
-# Vanilla JavaScript App
+#Assignment 1:
 
-[Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/overview) allows you to easily build JavaScript apps in minutes. Use this repo with the [quickstart](https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=vanilla-javascript) to build and customize a new static site.
+>In this assignment, I developed a basic web application and set up a CI/CD pipeline using GitHub Actions, with deployment to Azure. The repository on GitHub includes an automated workflow that deploys changes to Azure whenever they are pushed to the main branch.
 
-This repo is used as a starter for a _very basic_ HTML web application using no front-end frameworks.
-
-This repo has a dev container. This means if you open it inside a [GitHub Codespace](https://github.com/features/codespaces), or using [VS Code with the remote containers extension](https://code.visualstudio.com/docs/remote/containers), it will be opened inside a container with all the dependencies already installed.
+##GitHub Repository: https://github.com/ashevkarIIT/e-commerce
+##Deployed Web Application: https://thankful-field-0f0aa041e.5.azurestaticapps.net
